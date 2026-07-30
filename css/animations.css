@@ -1,0 +1,850 @@
+/*==========================================================
+    PARISTA POUDEL PORTFOLIO
+    Animations Stylesheet
+
+    Part 1
+    - Keyframes
+    - Floating Blobs
+    - Loader
+    - Fade Animations
+    - Hero Animations
+    - Hover Effects
+==========================================================*/
+
+
+/*==========================================================
+    KEYFRAMES
+==========================================================*/
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+        opacity:0;
+        transform:scale(.85);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+
+/*==========================================================
+    FLOATING BLOBS
+==========================================================*/
+
+@keyframes blobOne{
+
+    0%{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    50%{
+
+        transform:translate(60px,-50px) scale(1.2);
+
+    }
+
+    100%{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+}
+
+@keyframes blobTwo{
+
+    0%{
+
+        transform:translate(0,0);
+
+    }
+
+    50%{
+
+        transform:translate(-70px,60px);
+
+    }
+
+    100%{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+@keyframes blobThree{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-60px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.blob1{
+
+    animation:blobOne 14s ease-in-out infinite;
+
+}
+
+.blob2{
+
+    animation:blobTwo 18s ease-in-out infinite;
+
+}
+
+.blob3{
+
+    animation:blobThree 16s ease-in-out infinite;
+
+}
+
+
+/*==========================================================
+    LOADER
+==========================================================*/
+
+@keyframes loaderPulse{
+
+    0%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(108,99,255,.5);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        box-shadow:0 0 35px rgba(108,99,255,.7);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(108,99,255,.5);
+
+    }
+
+}
+
+.loader-logo{
+
+    animation:loaderPulse 1.6s infinite;
+
+}
+
+
+/*==========================================================
+    HERO
+==========================================================*/
+
+.hero-content{
+
+    animation:fadeLeft .9s ease forwards;
+
+}
+
+.hero-image{
+
+    animation:fadeRight 1s ease forwards;
+
+}
+
+
+/*==========================================================
+    SCROLL INDICATOR
+==========================================================*/
+
+@keyframes bounce{
+
+    0%{
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,12px);
+
+    }
+
+    100%{
+
+        transform:translate(-50%,0);
+
+    }
+
+}
+
+
+/*==========================================================
+    GLOW
+==========================================================*/
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 10px rgba(108,99,255,.2);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 35px rgba(108,99,255,.55);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 10px rgba(108,99,255,.2);
+
+    }
+
+}
+
+.btn-primary{
+
+    animation:glow 3s infinite;
+
+}
+
+
+/*==========================================================
+    FLOATING CARDS
+==========================================================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.tech-card:nth-child(odd){
+
+    animation:float 6s ease-in-out infinite;
+
+}
+
+.tech-card:nth-child(even){
+
+    animation:float 8s ease-in-out infinite;
+
+}
+
+
+/*==========================================================
+    IMAGE SHINE
+==========================================================*/
+
+.image-card::before{
+
+    animation:shine 5s linear infinite;
+
+}
+
+@keyframes shine{
+
+    from{
+
+        transform:translateX(-120%) rotate(25deg);
+
+    }
+
+    to{
+
+        transform:translateX(220%) rotate(25deg);
+
+    }
+
+}
+
+
+/*==========================================================
+    CARD HOVER
+==========================================================*/
+
+.project-card:hover,
+.service-card:hover,
+.tech-card:hover,
+.learning-card:hover,
+.certificate-card:hover,
+.testimonial-card:hover{
+
+    animation:zoomIn .35s;
+
+}
+/*==========================================================
+    SCROLL REVEAL CLASSES
+==========================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-70px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(70px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-scale{
+
+    opacity:0;
+
+    transform:scale(.85);
+
+    transition:all .8s ease;
+
+}
+
+.reveal-scale.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+/*==========================================================
+    STAGGER ANIMATION
+==========================================================*/
+
+.stagger>*{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+.stagger>*{
+
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+
+}
+
+
+/*==========================================================
+    RIPPLE BUTTON EFFECT
+==========================================================*/
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.25);
+
+    transform:translate(-50%,-50%);
+
+    transition:width .6s ease,height .6s ease;
+
+}
+
+.btn:active::after{
+
+    width:350px;
+
+    height:350px;
+
+}
+
+
+/*==========================================================
+    MAGNETIC BUTTON EFFECT
+==========================================================*/
+
+.magnetic{
+
+    transition:
+        transform .2s ease,
+        box-shadow .3s ease;
+
+    will-change:transform;
+
+}
+
+
+/*==========================================================
+    GRADIENT BORDER ANIMATION
+==========================================================*/
+
+.gradient-border{
+
+    position:relative;
+
+}
+
+.gradient-border::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-1px;
+
+    border-radius:inherit;
+
+    padding:1px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--secondary),
+            var(--accent)
+        );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+            mask-composite:exclude;
+
+    animation:borderRotate 6s linear infinite;
+
+}
+
+@keyframes borderRotate{
+
+    from{
+
+        filter:hue-rotate(0deg);
+
+    }
+
+    to{
+
+        filter:hue-rotate(360deg);
+
+    }
+
+}
+
+
+/*==========================================================
+    FLOATING PARTICLES
+==========================================================*/
+
+@keyframes particleFloat{
+
+    0%{
+
+        transform:
+            translateY(0)
+            translateX(0);
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:.7;
+
+    }
+
+    100%{
+
+        transform:
+            translateY(-80px)
+            translateX(25px);
+
+        opacity:0;
+
+    }
+
+}
+
+.particle{
+
+    position:absolute;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+    animation:particleFloat 6s linear infinite;
+
+}
+
+
+/*==========================================================
+    IMAGE HOVER
+==========================================================*/
+
+.project-card img,
+.portfolio-item img{
+
+    transition:
+        transform .6s ease,
+        filter .6s ease;
+
+}
+
+.project-card:hover img,
+.portfolio-item:hover img{
+
+    transform:scale(1.08);
+
+    filter:brightness(1.05);
+
+}
+
+
+/*==========================================================
+    SOCIAL ICONS
+==========================================================*/
+
+.social-icons a:hover,
+.hero-socials a:hover{
+
+    animation:socialBounce .5s;
+
+}
+
+@keyframes socialBounce{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.18);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/*==========================================================
+    FADE IN DELAYS
+==========================================================*/
+
+.delay-1{
+
+    animation-delay:.2s;
+
+}
+
+.delay-2{
+
+    animation-delay:.4s;
+
+}
+
+.delay-3{
+
+    animation-delay:.6s;
+
+}
+
+.delay-4{
+
+    animation-delay:.8s;
+
+}
+
+
+/*==========================================================
+    SECTION HOVER GLOW
+==========================================================*/
+
+.glass:hover{
+
+    box-shadow:
+
+        0 15px 50px rgba(108,99,255,.18),
+
+        0 0 40px rgba(0,212,255,.08);
+
+}
+
+
+/*==========================================================
+    PAGE TRANSITION
+==========================================================*/
+
+body{
+
+    animation:pageFade .6s ease;
+
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/*==========================================================
+    ROTATING ICON
+==========================================================*/
+
+.rotate-hover:hover i{
+
+    transform:rotate(360deg);
+
+    transition:.7s;
+
+}
+
+
+/*==========================================================
+    FLOATING IMAGE
+==========================================================*/
+
+.image-card{
+
+    animation:imageFloat 7s ease-in-out infinite;
+
+}
+
+@keyframes imageFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==========================================================
+    COUNTER GLOW
+==========================================================*/
+
+.counter{
+
+    text-shadow:
+
+        0 0 20px rgba(108,99,255,.25);
+
+}
+
+
+/*==========================================================
+    REDUCED MOTION
+==========================================================*/
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+
+/*==========================================================
+    END OF FILE
+==========================================================*/

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!--==================================================
+        META
+    ===================================================-->
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            Parista Poudel | Portfolio
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <meta name="description"
+            content="Official portfolio of Parista Poudel, B.Sc. CSIT Student, Frontend Developer and UI/UX Enthusiast.">
+
+        <meta name="keywords" content="Portfolio, Frontend Developer, CSIT, Nepal, UI UX, Software Engineer">
+
+        <meta property="og:title" content="Parista Poudel Portfolio">
+
+        <meta property="og:description" content="Modern Portfolio Website">
+
+        <meta property="og:type" content="website">
+
+        <!--==================================================
+        GOOGLE FONTS
+    ===================================================-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <!--==================================================
+        FONT AWESOME
+    ===================================================-->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        <!--==================================================
+        CSS
+    ===================================================-->
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/animations.css">
+
+        <link rel="stylesheet" href="css/responsive.css">
+
+    </head>
+
+    <body>
+
+        <!--==================================================
+    LOADER
+===================================================-->
+
+        <div id="loader">
+
+            <div class="loader-logo">
+
+                PP
+
+            </div>
+
+        </div>
+
+
+        <!--==================================================
+    CUSTOM CURSOR
+===================================================-->
+
+        <div class="cursor"></div>
+
+        <div class="cursor-dot"></div>
+
+
+        <!--==================================================
+    SCROLL PROGRESS
+===================================================-->
+
+        <div id="progress-bar"></div>
+
+
+        <!--==================================================
+    BACK TO TOP
+===================================================-->
+
+        <button id="backToTop" aria-label="Back to Top">
+
+            <i class="fa-solid fa-arrow-up"></i>
+
+        </button>
+
+
+        <!--==================================================
+    NAVIGATION
+===================================================-->
+
+        <header>
+
+            <nav class="navbar">
+
+                <div class="logo">
+
+                    <a href="index.html">
+
+                        Parista<span>.</span>
+
+                    </a>
+
+                </div>
+
+                <ul class="nav-links">
+
+                    <li>
+
+                        <a class="active" href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="services.html">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="portfolio.html">
+
+                            Portfolio
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="contact.html">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <div class="nav-actions">
+
+                    <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <div class="hamburger">
+
+                        <span></span>
+
+                        <span></span>
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <!--==================================================
+    HERO
+===================================================-->
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <div class="hero-content reveal-left">
+
+                    <span class="hero-tag">
+
+                        👋 Welcome to my portfolio
+
+                    </span>
+
+                    <h1>
+
+                        Hi,
+
+                        I'm
+
+                        <span>
+
+                            Parista Poudel
+
+                        </span>
+
+                    </h1>
+
+                    <h2>
+
+                        <span id="typing-text">
+
+                            Software Engineer
+
+                        </span>
+
+                    </h2>
+
+                    <p>
+
+                        I am a B.Sc. CSIT student from Vedas College,
+                        passionate about frontend development,
+                        beautiful user interfaces,
+                        and building modern digital experiences
+                        that combine creativity with performance.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="assets/resume.pdf" class="btn btn-primary magnetic">
+
+                            Download Resume
+
+                        </a>
+
+                        <a href="portfolio.html" class="btn btn-secondary magnetic">
+
+                            View Projects
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-socials">
+
+                        <a href="#">
+
+                            <i class="fab fa-github"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fab fa-linkedin"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fab fa-facebook"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fab fa-instagram"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image reveal-right">
+
+                    <div class="image-card">
+
+                        <img src="images/parista.jpg" alt="Parista Poudel">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!--==================================================
+    STATISTICS
+===================================================-->
+
+        <section class="stats">
+
+            <div class="container stagger">
+
+                <div class="stat-card glass">
+
+                    <h2 class="counter" data-target="15">0</h2>
+
+                    <p>Projects Completed</p>
+
+                </div>
+
+                <div class="stat-card glass">
+
+                    <h2 class="counter" data-target="10">0</h2>
+
+                    <p>Technologies Learned</p>
+
+                </div>
+
+                <div class="stat-card glass">
+
+                    <h2 class="counter" data-target="5">0</h2>
+
+                    <p>Certificates</p>
+
+                </div>
+
+                <div class="stat-card glass">
+
+                    <h2 class="counter" data-target="2">0</h2>
+
+                    <p>Years Learning</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    FEATURED PROJECTS
+===================================================-->
+
+        <section class="featured-projects reveal">
+
+            <div class="section-title">
+
+                <h2>Featured Projects</h2>
+
+                <p>
+                    Some of the projects that represent my learning journey and passion
+                    for modern web development.
+                </p>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card glass">
+
+                    <img src="images/project1.jpg" alt="Project 1">
+
+                    <div class="project-content">
+
+                        <h3>Portfolio Website</h3>
+
+                        <p>
+                            Responsive personal portfolio using HTML, CSS and JavaScript.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#" class="btn btn-primary">GitHub</a>
+
+                            <a href="#" class="btn btn-secondary">Live Demo</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card glass">
+
+                    <img src="images/project2.jpg" alt="Project 2">
+
+                    <div class="project-content">
+
+                        <h3>Academic Management System</h3>
+
+                        <p>
+                            University project with responsive dashboard and clean UI.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#" class="btn btn-primary">GitHub</a>
+
+                            <a href="#" class="btn btn-secondary">Live Demo</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    TECH STACK
+===================================================-->
+
+        <section class="tech-stack reveal">
+
+            <div class="section-title">
+
+                <h2>Technology Stack</h2>
+
+            </div>
+
+            <div class="tech-grid stagger">
+
+                <div class="tech-card glass">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="tech-card glass">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="tech-card glass">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="tech-card glass">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="tech-card glass">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+
+                <div class="tech-card glass">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    CERTIFICATES
+===================================================-->
+
+        <section class="certificates reveal">
+
+            <div class="section-title">
+
+                <h2>Certificates</h2>
+
+            </div>
+
+            <div class="certificate-grid">
+
+                <div class="certificate-card">
+
+                    <div class="certificate-placeholder">
+
+                        <i class="fas fa-award"></i>
+
+                    </div>
+
+                    <h3>Frontend Development</h3>
+
+                    <!-- <p>Certificate Placeholder</p> -->
+                    <img src="images/certificate1.jpg" alt="">
+
+                </div>
+
+                <div class="certificate-card">
+
+                    <div class="certificate-placeholder">
+
+                        <i class="fas fa-certificate"></i>
+
+                    </div>
+
+                    <h3>UI / UX Design</h3>
+
+                    <!-- <p>Certificate Placeholder</p> -->
+                    <img src="images/certificate2.jpg" alt="">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    TESTIMONIALS
+===================================================-->
+
+        <section class="testimonials reveal">
+
+            <div class="section-title">
+
+                <h2>Testimonials</h2>
+
+            </div>
+
+            <div class="testimonial-slider">
+
+                <div class="testimonial-card">
+
+                    <p>
+                        "Parista consistently delivers beautiful, clean and responsive interfaces."
+                    </p>
+
+                    <h4>John Doe</h4>
+
+                    <span>Senior Developer</span>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <p>
+                        "Excellent attention to detail and a great eye for design."
+                    </p>
+
+                    <h4>Jane Smith</h4>
+
+                    <span>UI/UX Designer</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    LEARNING JOURNEY
+===================================================-->
+
+        <section class="learning reveal">
+
+            <div class="section-title">
+
+                <h2>Currently Learning</h2>
+
+            </div>
+
+            <div class="learning-grid">
+
+                <div class="learning-card glass">
+
+                    <i class="fas fa-code"></i>
+
+                    <h3>Advanced JavaScript</h3>
+
+                </div>
+
+                <div class="learning-card glass">
+
+                    <i class="fas fa-mobile-screen"></i>
+
+                    <h3>Responsive UI Design</h3>
+
+                </div>
+
+                <div class="learning-card glass">
+
+                    <i class="fas fa-layer-group"></i>
+
+                    <h3>Frontend Architecture</h3>
+
+                </div>
+
+                <div class="learning-card glass">
+
+                    <i class="fas fa-palette"></i>
+
+                    <h3>UI / UX Principles</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    CTA
+===================================================-->
+
+        <section class="cta">
+
+            <div class="cta-container reveal">
+
+                <h2>
+
+                    Let's Build Something Amazing Together
+
+                </h2>
+
+                <p>
+
+                    I'm always excited to collaborate on creative ideas,
+                    academic projects, and professional opportunities.
+
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="contact.html" class="btn btn-primary magnetic">
+
+                        Contact Me
+
+                    </a>
+
+                    <a href="portfolio.html" class="btn btn-secondary magnetic">
+
+                        Explore Projects
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    FOOTER
+===================================================-->
+
+        <footer>
+
+            <div class="footer-container">
+
+                <div class="footer-about">
+
+                    <h2>Parista.</h2>
+
+                    <p>
+
+                        B.Sc. CSIT Student, Frontend Developer,
+                        and UI/UX Enthusiast passionate about
+                        creating beautiful digital experiences.
+
+                    </p>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="portfolio.html">Portfolio</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-social">
+
+                    <h3>Follow Me</h3>
+
+                    <div class="social-icons">
+
+                        <a href="#"><i class="fab fa-github"></i></a>
+
+                        <a href="https://www.linkedin.com/in/parista-poudel-40b528301?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+
+                        <a href="https://www.facebook.com/pareesta"><i class="fab fa-facebook"></i></a>
+
+                        <a href="https://www.instagram.com/parista_poudel/"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 Parista Poudel. All Rights Reserved.
+
+                </p>
+
+                <p>
+
+                    Designed with ❤️ by Parista Poudel
+
+                </p>
+
+            </div>
+
+        </footer>
+
+
+        <!--==================================================
+    JAVASCRIPT
+===================================================-->
+
+        <script src="js/app.js"></script>
+
+        <script src="js/typing.js"></script>
+
+        <script src="js/cursor.js"></script>
+
+        <script src="js/animations.js"></script>
+
+    </body>
+
+</html>

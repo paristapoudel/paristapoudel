@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+
+            Portfolio | Parista Poudel
+
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+
+        <meta name="description" content="Projects by Parista Poudel.">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/animations.css">
+
+        <link rel="stylesheet" href="css/responsive.css">
+
+    </head>
+
+    <body>
+
+        <!-- LOADER -->
+
+        <div id="loader">
+
+            <div class="loader-logo">
+
+                PP
+
+            </div>
+
+        </div>
+
+        <!-- CURSOR -->
+
+        <div class="cursor"></div>
+
+        <div class="cursor-dot"></div>
+
+        <!-- SCROLL PROGRESS -->
+
+        <div id="progress-bar"></div>
+
+        <!-- BACK TO TOP -->
+
+        <button id="backToTop">
+
+            <i class="fa-solid fa-arrow-up"></i>
+
+        </button>
+
+        <!-- NAVBAR -->
+
+        <header>
+
+            <nav class="navbar">
+
+                <div class="logo">
+
+                    <a href="index.html">
+
+                        Parista<span>.</span>
+
+                    </a>
+
+                </div>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li>
+
+                        <a class="active" href="portfolio.html">
+
+                            Portfolio
+
+                        </a>
+
+                    </li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+                <div class="nav-actions">
+
+                    <button id="themeToggle">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <div class="hamburger">
+
+                        <span></span>
+
+                        <span></span>
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- HERO -->
+
+        <section class="about-hero">
+
+            <div class="container">
+
+                <div class="section-title reveal">
+
+                    <span class="hero-tag">
+
+                        My Work
+
+                    </span>
+
+                    <h1>
+
+                        Featured
+
+                        <span>
+
+                            Projects
+
+                        </span>
+
+                    </h1>
+
+                    <p>
+
+                        A collection of academic, personal and frontend
+                        projects that showcase my learning journey,
+                        problem-solving ability and passion for development.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FILTER BUTTONS -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="filter-buttons">
+
+                    <button class="filter-btn active" data-filter="all">
+
+                        All
+
+                    </button>
+
+                    <button class="filter-btn" data-filter="web">
+
+                        Web
+
+                    </button>
+
+                    <button class="filter-btn" data-filter="academic">
+
+                        Academic
+
+                    </button>
+
+                    <button class="filter-btn" data-filter="uiux">
+
+                        UI / UX
+
+                    </button>
+
+                    <button class="filter-btn" data-filter="personal">
+
+                        Personal
+
+                    </button>
+
+                </div>
+
+                <!-- PROJECT GRID -->
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+
+                    <div class="portfolio-item project-card glass" data-category="web">
+
+                        <img src="images/project1.jpg" alt="Portfolio Website">
+
+                        <div class="project-content">
+
+                            <h3>
+
+                                Portfolio Website
+
+                            </h3>
+
+                            <p>
+
+                                Responsive portfolio using HTML, CSS & JavaScript.
+
+                            </p>
+
+                            <p>
+
+                                <strong>Tech:</strong>
+
+                                HTML • CSS • JavaScript
+
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+
+                                    GitHub
+
+                                </a>
+
+                                <a href="#" class="btn btn-secondary">
+
+                                    Live Demo
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PROJECT 2 -->
+
+                    <div class="portfolio-item project-card glass" data-category="academic">
+
+                        <img src="images/project2.jpg" alt="Student Management">
+
+                        <div class="project-content">
+
+                            <h3>
+
+                                Student Management System
+
+                            </h3>
+
+                            <p>
+
+                                Academic desktop/web project for managing students.
+
+                            </p>
+
+                            <p>
+
+                                <strong>Tech:</strong>
+
+                                Python • MySQL
+
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+
+                                    GitHub
+
+                                </a>
+
+                                <a href="#" class="btn btn-secondary">
+
+                                    Demo
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PROJECT 3 -->
+
+                    <div class="portfolio-item project-card glass" data-category="uiux">
+
+                        <img src="images/project3.jpg" alt="UI Design">
+
+                        <div class="project-content">
+
+                            <h3>
+
+                                Finance App UI
+
+                            </h3>
+
+                            <p>
+
+                                Modern mobile dashboard interface.
+
+                            </p>
+
+                            <p>
+
+                                <strong>Tech:</strong>
+
+                                Figma
+
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+
+                                    Prototype
+
+                                </a>
+
+                                <a href="#" class="btn btn-secondary">
+
+                                    Preview
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PROJECT 4 -->
+
+                    <div class="portfolio-item project-card glass" data-category="personal">
+
+                        <img src="images/project4.jpg" alt="Personal Blog">
+
+                        <div class="project-content">
+
+                            <h3>
+
+                                Personal Blog
+
+                            </h3>
+
+                            <p>
+
+                                Minimal blogging website with responsive layout.
+
+                            </p>
+
+                            <p>
+
+                                <strong>Tech:</strong>
+
+                                HTML • CSS
+
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+
+                                    GitHub
+
+                                </a>
+
+                                <a href="#" class="btn btn-secondary">
+
+                                    Demo
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- PROJECT 5 -->
+
+                    <div class="portfolio-item project-card glass" data-category="web">
+
+                        <img src="images/project5.jpg" alt="E-Commerce Website">
+
+                        <div class="project-content">
+
+                            <h3>
+
+                                E-Commerce Website
+
+                            </h3>
+
+                            <p>
+
+                                Modern shopping website with responsive UI and product pages.
+
+                            </p>
+
+                            <p>
+
+                                <strong>Tech:</strong>
+
+                                HTML • CSS • JavaScript
+
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+
+                                    GitHub
+
+                                </a>
+
+                                <a href="#" class="btn btn-secondary">
+
+                                    Live Demo
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROJECT 6 -->
+
+                    <div class="portfolio-item project-card glass" data-category="academic">
+
+                        <img src="images/project6.jpg" alt="Library Management System">
+
+                        <div class="project-content">
+
+                            <h3>
+
+                                Library Management System
+
+                            </h3>
+
+                            <p>
+
+                                Academic project for managing books, students and borrowing records.
+
+                            </p>
+
+                            <p>
+
+                                <strong>Tech:</strong>
+
+                                Python • MySQL
+
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+
+                                    GitHub
+
+                                </a>
+
+                                <a href="#" class="btn btn-secondary">
+
+                                    Demo
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROJECT 7 -->
+
+                    <div class="portfolio-item project-card glass" data-category="uiux">
+
+                        <img src="images/project7.jpg" alt="Travel Landing Page">
+
+                        <div class="project-content">
+
+                            <h3>
+
+                                Travel Landing Page
+
+                            </h3>
+
+                            <p>
+
+                                Modern travel website interface focused on user experience.
+
+                            </p>
+
+                            <p>
+
+                                <strong>Tech:</strong>
+
+                                Figma
+
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+
+                                    Prototype
+
+                                </a>
+
+                                <a href="#" class="btn btn-secondary">
+
+                                    Preview
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROJECT 8 -->
+
+                    <div class="portfolio-item project-card glass" data-category="personal">
+
+                        <img src="images/project8.jpg" alt="Weather App">
+
+                        <div class="project-content">
+
+                            <h3>
+
+                                Weather App
+
+                            </h3>
+
+                            <p>
+
+                                Simple weather dashboard with a clean and responsive interface.
+
+                            </p>
+
+                            <p>
+
+                                <strong>Tech:</strong>
+
+                                HTML • CSS • JavaScript
+
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+
+                                    GitHub
+
+                                </a>
+
+                                <a href="#" class="btn btn-secondary">
+
+                                    Live Demo
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    CALL TO ACTION
+===================================================-->
+
+        <section class="cta">
+
+            <div class="cta-container reveal">
+
+                <h2>
+
+                    Interested in Working Together?
+
+                </h2>
+
+                <p>
+
+                    I'm always excited to collaborate on new ideas,
+                    academic projects and creative web experiences.
+
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="contact.html" class="btn btn-primary magnetic">
+
+                        Hire Me
+
+                    </a>
+
+                    <a href="assets/resume.pdf" class="btn btn-secondary magnetic">
+
+                        Download Resume
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--==================================================
+    FOOTER
+===================================================-->
+
+        <footer>
+
+            <div class="footer-container">
+
+                <div class="footer-about">
+
+                    <h2>
+
+                        Parista.
+
+                    </h2>
+
+                    <p>
+
+                        Passionate about creating modern,
+                        responsive and visually engaging
+                        web experiences.
+
+                    </p>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h3>
+
+                        Quick Links
+
+                    </h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-social">
+
+                    <h3>
+
+                        Follow Me
+
+                    </h3>
+
+                    <div class="social-icons">
+
+                        <a href="#"><i class="fab fa-github"></i></a>
+
+                        <a href="https://www.linkedin.com/in/parista-poudel-40b528301?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+
+                        <a href="https://www.facebook.com/pareesta"><i class="fab fa-facebook"></i></a>
+
+                        <a href="https://www.instagram.com/parista_poudel/"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 Parista Poudel. All Rights Reserved.
+
+                </p>
+
+                <p>
+
+                    Designed with ❤️ by Parista Poudel
+
+                </p>
+
+            </div>
+
+        </footer>
+
+
+        <!--==================================================
+    JAVASCRIPT
+===================================================-->
+
+        <script src="js/app.js"></script>
+
+        <script src="js/cursor.js"></script>
+
+        <script src="js/animations.js"></script>
+
+        <script src="js/portfolio-filter.js"></script>
+
+    </body>
+
+</html>

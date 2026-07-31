@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on MotoFrost RTS Front End (React and Vue.js)<br><br>🌱 I’m currently learning Angular, BackboneJS<br><br>👨‍💻 All of my projects are available at https://paristapoudel.github.io/paristapoudel/<br><br>💬 Ask me about React, Angular, TypeScript, JavaScript, Tailwind CSS, SASS, Bootstrap<br><br>📫 How to reach me paristapoudel777@gmail.com<br><br>⚡ Fun fact I can sleep well even after 10 mugs of coffee.<br><br>
+🔭 I’m currently working on MotoFrost RTS Front End (React and Vue.js)<br><br>🌱 I’m currently learning Angular, BackboneJS<br><br>👨‍💻 All of my projects are available at https://paristapoudel.github.io/paristapoudel/<br><br>💬 Ask me about React, Angular, TypeScript, JavaScript, Tailwind CSS, SASS, Bootstrap<br><br>📫 How to reach me paristapoudel777@gmail.com<br><br>⚡ Fun fact: I can sleep well even after 10 mugs of coffee.<br><br>
 
 
 ## 🌐 Socials:
